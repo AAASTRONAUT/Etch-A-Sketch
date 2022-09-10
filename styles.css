@@ -1,0 +1,64 @@
+@font-face {
+    font-family: bubblegum;
+    src: url(Bubblegum2BackgroundRegular-ZV2Xq.ttf);
+}
+
+
+.heading{
+    font-size:50px;
+    color: #c9a022;
+    font-family: bubblegum;
+    text-align:center;
+    padding:50px;
+}
+
+
+.mainbox{
+    height: 600px;
+    width :900px;
+    border-radius:10px;
+    background-color: #dedede;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:auto;
+}
+
+.menuBar{
+    height:500px;
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: rgb(225, 225, 225);
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+}
+
+button{
+    height:50px;
+    width:125px;
+    border-radius:10px;
+    font-size:20px;
+    background-color: #ccaa43;
+}
+
+.grid{
+    width:500px;
+    height:500px;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.box, .select{
+    height:100%;
+    width:100%;
+    display:flex;
+}
+
+
+
+
