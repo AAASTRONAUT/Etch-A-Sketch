@@ -9,18 +9,27 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="heading">
-            ETCH-A-SKETCH
-        </div>
         <div class="mainbox">
-            <div class="menuBar">
-                <button></button>
-                <button>Shade</button>
-                <button>Rainbow</button>
-                <button> Eraser</button>
-                <button>Clear</button>                
+            <div class="heading">
+                ETCH-A-SKETCH
             </div>
-            <div class="grid"></div>
+            <div class="content">
+                <div class="menuBar">
+                    <input type="color" id="colorPicker" class="toggleBtn">
+                    <button id="shadeBtn" class="toggleBtn">Shade</button>
+                    <button id="rainbowBtn" class="toggleBtn">Rainbow</button>
+                    <button id="showGridBtn">Show/Hide Grid</button>
+                    <button id="eraserBtn" class="toggleBtn"> Eraser</button>
+                    <button id="clearBtn">Clear</button>         
+                </div>
+                <div class="sizeGrid">
+                    <div class="gridBox">
+                        <div class="grid"></div>
+                    </div>
+                    <div class="sizeValue"></div>    
+                    <input type="range" min="0" max="64" value="16" step="2" class="slider">   
+                </div>
+            </div>
         </div>
     </body>
 </html>

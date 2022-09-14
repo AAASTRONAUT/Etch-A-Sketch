@@ -1,64 +1,112 @@
-@font-face {
-    font-family: bubblegum;
-    src: url(Bubblegum2BackgroundRegular-ZV2Xq.ttf);
-}
-
 
 .heading{
-    font-size:50px;
+    font-size: 50px;
     color: #c9a022;
-    font-family: bubblegum;
     text-align:center;
-    padding:50px;
+    padding-bottom: 20px;
 }
 
-
 .mainbox{
-    height: 600px;
-    width :900px;
+    width :100%;
     border-radius:10px;
     background-color: #dedede;
     display:flex;
-    justify-content:space-evenly;
+    flex-direction:column;
+    justify-content:flex-start;
     align-items:center;
-    margin:auto;
+    margin:0 auto;
+}
+
+
+.content{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
 .menuBar{
-    height:500px;
-    width:200px;
+    width:20%;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
     background-color: rgb(225, 225, 225);
     color:rgb(0, 0, 0);
-    border-radius:10px;
+    border-radius:20px;
+    padding:10px;
 }
 
 button{
-    height:50px;
-    width:125px;
+    width:100%;
     border-radius:10px;
+    margin:1%;
+    padding: 10%;
     font-size:20px;
     background-color: #ccaa43;
+    cursor:pointer;
+    border:none;
+    transition-duration: 100ms;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.35, -0.26, 1, 0.37);
+}
+
+
+.onHover{
+    transform:scale(1.1);
+    background-color: #a57e08;
+}
+
+.onClick{
+    background-color: #a57e08;
+}
+
+#colorPicker{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color: #585754;
+    cursor:pointer;
+    border:none;
 }
 
 .grid{
-    width:500px;
-    height:500px;
-    border:2px solid black;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
     display:flex;
     flex-direction:column;
+    background-color:white;
 }
 
+.gridBox{
+    max-width:800px;
+    width:100%;
+    display:flex;
+}
+
+.gridBox:after{
+    padding-bottom: 100%;
+    display: block;
+    content: "";
+}
 
 .box, .select{
     height:100%;
     width:100%;
     display:flex;
+    box-sizing:border-box;
 }
 
+.border{
+    border:1px solid black;
+}
 
-
-
+.sizeGrid{
+    max-width:800px;
+    width: 70%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    text-align:center;
+}
