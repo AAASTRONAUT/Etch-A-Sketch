@@ -1,9 +1,14 @@
+@font-face{
+    font-family: Bubblegum;
+    src: url(Bubblegum2BackgroundRegular-ZV2Xq.ttf);
+}
 
 .heading{
     font-size: 50px;
     color: #c9a022;
     text-align:center;
     padding-bottom: 20px;
+    font-family: Bubblegum;
 }
 
 .mainbox{
