@@ -53,6 +53,7 @@ const colorSetter = (e) => {
     else if (mode == 'eraser') color='white';
 
     else if (mode=='shade') {
+        color='';
         //***********************to be completed*******************************
     }
     e.target.style.backgroundColor=color;
